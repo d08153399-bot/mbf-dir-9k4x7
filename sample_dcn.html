@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>МБФ — образец дизайна (dashboardcn)</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f6f7f9;font-family:-apple-system,'Helvetica Neue',Arial,sans-serif;color:#0f172a}
+.wrap{max-width:1180px;margin:0 auto;padding:18px 16px 40px}
+h1{font-size:20px;margin:0 0 2px} .sub{font-size:12.5px;color:#64748b;margin-bottom:16px}
+.grid{display:grid;gap:14px}
+.g3{grid-template-columns:repeat(3,1fr)} .g2{grid-template-columns:1fr 1fr}
+@media(max-width:900px){.g3,.g2{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid #e6e8ec;border-radius:14px;padding:16px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.lbl{font-size:11.5px;letter-spacing:.3px;text-transform:uppercase;color:#64748b;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.big{font-size:30px;font-weight:800;letter-spacing:-.5px;margin:6px 0 2px}
+.big small{font-size:13px;font-weight:500;color:#64748b;letter-spacing:0}
+.note{font-size:12px;color:#64748b;margin-top:6px;line-height:1.45}
+.badge{font-size:11px;font-weight:700;border-radius:999px;padding:3px 8px}
+.badge.good{background:#e7f6ef;color:#0e9f6e} .badge.bad{background:#fdeaea;color:#e5484d} .badge.neu{background:#eef2f7;color:#64748b}
+.tick{position:relative;height:6px;border-radius:4px;background:#eef1f5;margin-top:10px}
+.tick>b{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:#1f6bff}
+.tick i{position:absolute;top:-2px;width:1px;height:10px;background:#cbd5e1}
+.hatch{height:9px;border-radius:5px;background:#eef1f5;margin-top:4px}
+.row{display:flex;align-items:center;gap:10px;margin-top:9px}
+.row .nm{flex:1;font-size:12.5px;color:#334155;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .vv{font-size:12.5px;font-weight:700;white-space:nowrap}
+.gauge{text-align:center} .gv{font-size:26px;font-weight:800;margin-top:-34px}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:#94a3b8;padding:4px 6px;border-bottom:1px solid #eef1f5}
+td{padding:6px;border-bottom:1px solid #f3f5f8} .num{text-align:right;font-variant-numeric:tabular-nums}
+.pair{display:flex;gap:0} .pair>div{flex:1;padding:2px 14px} .pair>div:first-child{border-right:1px solid #eef1f5}
+.pv{font-size:24px;font-weight:800} .pv small{font-size:12px;color:#64748b;font-weight:500}
+.bar{height:5px;border-radius:3px;background:#eef1f5;margin-top:6px} .bar>b{display:block;height:5px;border-radius:3px}
+.foot{font-size:11.5px;color:#94a3b8;margin-top:18px;line-height:1.5}
+</style></head><body><div class="wrap">
+<h1>МБФ · Панель директора — ОБРАЗЕЦ дизайна</h1>
+<div class="sub">стиль dashboardcn: большая цифра · шкала-тик · дельта-пилюля · полосатая разбивка · данные реальные (02.10.26, склад 04.10)</div>
+
+<div class="grid g3">
+ <div class="card"><div class="lbl"><span>План октября</span><span class="badge neu">раб. день 3 из 22</span></div>
+  <div class="big">2 638,3 <small>тыс.уп.</small></div>
+  <div class="tick"><b style="width:14%"></b><i style="left:4.5%"></i><i style="left:9.1%"></i><i style="left:13.6%"></i><i style="left:18.2%"></i><i style="left:22.7%"></i><i style="left:27.3%"></i><i style="left:31.8%"></i><i style="left:36.4%"></i><i style="left:40.9%"></i><i style="left:45.5%"></i><i style="left:50.0%"></i><i style="left:54.5%"></i><i style="left:59.1%"></i><i style="left:63.6%"></i><i style="left:68.2%"></i><i style="left:72.7%"></i><i style="left:77.3%"></i><i style="left:81.8%"></i><i style="left:86.4%"></i><i style="left:90.9%"></i><i style="left:95.5%"></i></div>
+  <div class="note">засечки — рабочие дни · синее = пройденная часть месяца</div></div>
+
+ <div class="card"><div class="lbl"><span>Выпущено по 02.10</span><span class="badge neu">1,4% плана</span></div>
+  <div class="big">38,1 <small>тыс.уп.</small></div>
+  <div style="display:flex;align-items:flex-end;gap:6px;height:44px;margin-top:8px">
+   <div style="flex:1;background:#a8c8ff;border-radius:4px 4px 0 0;height:44px" title="июль: 1 510,8"></div><span style="flex:1;font-size:9px;color:#94a3b8;text-align:center;margin-top:-1px">ию</span><div style="flex:1;background:#a8c8ff;border-radius:4px 4px 0 0;height:41px" title="август: 1 393,0"></div><span style="flex:1;font-size:9px;color:#94a3b8;text-align:center;margin-top:-1px">ав</span><div style="flex:1;background:#a8c8ff;border-radius:4px 4px 0 0;height:28px" title="сентябрь: 962,2"></div><span style="flex:1;font-size:9px;color:#94a3b8;text-align:center;margin-top:-1px">се</span><div style="flex:1;background:#1f6bff;border-radius:4px 4px 0 0;height:3px" title="октябрь: 38,1"></div><span style="flex:1;font-size:9px;color:#94a3b8;text-align:center;margin-top:-1px">ок</span>
+  </div>
+  <div class="note">форма последних месяцев · пик: июль 1 510,8 тыс.уп.</div></div>
+
+ <div class="card"><div class="lbl"><span>Прогноз к 31.10</span><span class="badge neu">равномерный темп</span></div>
+  <div class="big">0,28 <small>млн упак.</small></div>
+  <div class="tick"><b style="width:11%;background:#f59e0b"></b><i style="left:4.5%"></i><i style="left:9.1%"></i><i style="left:13.6%"></i><i style="left:18.2%"></i><i style="left:22.7%"></i><i style="left:27.3%"></i><i style="left:31.8%"></i><i style="left:36.4%"></i><i style="left:40.9%"></i><i style="left:45.5%"></i><i style="left:50.0%"></i><i style="left:54.5%"></i><i style="left:59.1%"></i><i style="left:63.6%"></i><i style="left:68.2%"></i><i style="left:72.7%"></i><i style="left:77.3%"></i><i style="left:81.8%"></i><i style="left:86.4%"></i><i style="left:90.9%"></i><i style="left:95.5%"></i></div>
+  <div class="note">11% плана · равномерный темп (мало данных) · с 6-го раб. дня — профили июль/август</div></div>
+</div>
+
+<div class="grid g2" style="margin-top:14px">
+ <div class="card"><div class="lbl"><span>Дефицит под 4 кв</span><span class="badge good">▼ 1,6 млн к 02.10</span></div>
+  <div class="big">77,1 <small>млн ₽ · по складу на 04.10</small></div>
+  <div class="row"><span class="nm">🔴 Срочно (под октябрь)</span><span class="vv">6,0 млн</span></div>
+  <div class="hatch" style="background:repeating-linear-gradient(45deg,#e5484d22 0 4px,#e5484d66 4px 8px)"><div style="height:9px;border-radius:5px;width:8%;background:#e5484d"></div></div>
+  <div class="row"><span class="nm">🟡 До 15 октября (под ноябрь)</span><span class="vv">28,8 млн</span></div>
+  <div class="hatch" style="background:repeating-linear-gradient(45deg,#f59e0b22 0 4px,#f59e0b66 4px 8px)"><div style="height:9px;border-radius:5px;width:37%;background:#f59e0b"></div></div>
+  <div class="row"><span class="nm">🟢 До 15 ноября (под декабрь)</span><span class="vv">42,2 млн</span></div>
+  <div class="hatch" style="background:repeating-linear-gradient(45deg,#0e9f6e22 0 4px,#0e9f6e66 4px 8px)"><div style="height:9px;border-radius:5px;width:55%;background:#0e9f6e"></div></div>
+  <div class="note">полоса = доля транша в дефиците · детальные таблицы — вкладка «Закупка»</div></div>
+
+ <div class="card gauge"><div class="lbl" style="justify-content:center"><span>Выполнение плана октября</span></div>
+  <svg viewBox="0 0 200 100" style="width:100%;max-width:280px"><path d="M 30.0 95.0 A 70 70 0 0 1 32.4 113.1" stroke="#e5484d" stroke-width="9" fill="none" opacity="1" stroke-linecap="round"/><path d="M 32.4 113.1 A 70 70 0 0 1 39.4 130.0" stroke="#e5484d" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 39.4 130.0 A 70 70 0 0 1 50.5 144.5" stroke="#e5484d" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 50.5 144.5 A 70 70 0 0 1 65.0 155.6" stroke="#e5484d" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 65.0 155.6 A 70 70 0 0 1 81.9 162.6" stroke="#e5484d" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 81.9 162.6 A 70 70 0 0 1 100.0 165.0" stroke="#e5484d" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 100.0 165.0 A 70 70 0 0 1 118.1 162.6" stroke="#e5484d" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 118.1 162.6 A 70 70 0 0 1 135.0 155.6" stroke="#e5484d" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 135.0 155.6 A 70 70 0 0 1 149.5 144.5" stroke="#e5484d" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 149.5 144.5 A 70 70 0 0 1 160.6 130.0" stroke="#f59e0b" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 160.6 130.0 A 70 70 0 0 1 167.6 113.1" stroke="#f59e0b" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/><path d="M 167.6 113.1 A 70 70 0 0 1 170.0 95.0" stroke="#f59e0b" stroke-width="9" fill="none" opacity="0.18" stroke-linecap="round"/></svg>
+  <div class="gv">1,4%</div>
+  <div class="note">факт · красная зона &lt;70% · янтарная 70–100% · зелёная ≥100%<br>прогноз: 0,28 млн упак. (11%)</div></div>
+</div>
+
+<div class="grid g2" style="margin-top:14px">
+ <div class="card"><div class="lbl"><span>Деньги и неликвиды</span><span class="badge good">▼0.4 млн к пред. срезу</span></div>
+  <div class="pair" style="margin-top:8px">
+   <div><div class="pv" style="color:#1f6bff">215,2 <small>млн ₽</small></div><div class="note">остаток на р/с · все счета</div><div class="bar"><b style="width:70%;background:#1f6bff"></b></div></div>
+   <div><div class="pv" style="color:#e5484d">46,7 <small>млн ₽</small></div><div class="note">неликвиды &gt;3 мес · красные 36,4 · жёлтые 10,3</div><div class="bar"><b style="width:22%;background:#e5484d"></b></div></div>
+  </div>
+  <div class="note" style="margin-top:10px">источник: Норвик — выписка 23.09 (в ERP разносится) · Совкомбанк — выписка 24.09 (спецсчета торгов)</div></div>
+
+ <div class="card"><div class="lbl"><span>Топ дефицита под квартал</span><span class="badge neu">позиций с дефицитом: много · топ-6</span></div>
+  <table><tr><th>Позиция</th><th class="num">Склад</th><th class="num">К закупке</th><th class="num">Сумма ₽</th><th></th></tr><tr><td>Сахар белый</td><td class="num">90 571</td><td class="num">153 217</td><td class="num"><b>10 418 743</b></td><td style="width:120px"><div class="hatch" style="width:100%;background:repeating-linear-gradient(45deg,#e5484d22 0 4px,#e5484d55 4px 8px)"></div></td></tr><tr><td>Этикетка пакета ГриппоФлю (малина) 1080 мм</td><td class="num">7 952</td><td class="num">13 269</td><td class="num"><b>5 639 495</b></td><td style="width:120px"><div class="hatch" style="width:54%;background:repeating-linear-gradient(45deg,#e5484d22 0 4px,#e5484d55 4px 8px)"></div></td></tr><tr><td>Этикетка пакета Нимесулид-МБФ,520 мм</td><td class="num">3 906</td><td class="num">12 550</td><td class="num"><b>5 333 882</b></td><td style="width:120px"><div class="hatch" style="width:51%;background:repeating-linear-gradient(45deg,#e5484d22 0 4px,#e5484d55 4px 8px)"></div></td></tr><tr><td>Ароматизатор Апельсин сухой Симрайс</td><td class="num">110</td><td class="num">885</td><td class="num"><b>4 526 386</b></td><td style="width:120px"><div class="hatch" style="width:43%;background:repeating-linear-gradient(45deg,#e5484d22 0 4px,#e5484d55 4px 8px)"></div></td></tr><tr><td>Нимесулид, Вайтл</td><td class="num">1 945</td><td class="num">1 519</td><td class="num"><b>4 513 375</b></td><td style="width:120px"><div class="hatch" style="width:43%;background:repeating-linear-gradient(45deg,#e5484d22 0 4px,#e5484d55 4px 8px)"></div></td></tr><tr><td>Пачка ГриппоФлю, №10 (малина)</td><td class="num">169</td><td class="num">852 904</td><td class="num"><b>3 621 090</b></td><td style="width:120px"><div class="hatch" style="width:35%;background:repeating-linear-gradient(45deg,#e5484d22 0 4px,#e5484d55 4px 8px)"></div></td></tr></table>
+  <div class="note">полоска — доля позиции в топе · полный список — вкладка «Закупка»</div></div>
+</div>
+
+<div class="foot">ОБРАЗЕЦ для обсуждения · в боевой виджет не вносился · компоненты: Tick Bar (шкала с засечками), Delta Badge (пилюля дельты), Breakdown (полосатая разбивка), Status Gauge (сегментный датчик), Distribution (форма месяцев фоном), Paired Metrics (парные карточки) · стиль: dashboardcn.com (MIT)</div>
+</div></body></html>
