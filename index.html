@@ -115,8 +115,6 @@
  #nk .kpi{padding:10px 14px} #nk .kpi .v{margin-top:4px} #nk .kpi .s{margin-top:3px} #nk .kpis{margin-bottom:8px}
  #nk .card{padding:10px 12px;margin-bottom:8px} #nk .card h3{margin:0 0 6px}
  #nk table{font-size:15px} #nk th{font-size:12px;padding:5px 4px} #nk td{padding:5px 4px}
-#q4 .kpi{padding:10px 14px} #q4 .kpi .v{margin-top:4px} #q4 .kpi .s{margin-top:3px} #q4 .kpis{margin-bottom:8px}
- #q4 .card{padding:10px 12px;margin-bottom:8px} #q4 table{font-size:14px} #q4 td{padding:3px 5px} #q4 th{padding:4px 5px}
 </style></head><body><div class="wrap">
 <header><div><h1>МБФ · Панель директора — Октябрь 2026</h1>
 <div class="sub">производство · план-факт-прогноз · обеспечение · вопросы · <b style="color:#1f6bff">интерактивная демо-версия — вкладки кликаются</b></div></div>
@@ -126,7 +124,6 @@
   <button id="tab_main" class="tab active" onclick="show('main',this)">Главное</button>
   <button id="tab_vyp" class="tab" onclick="show('vyp',this)">Выпуск</button>
   <button id="tab_zak" class="tab" onclick="show('zak',this)">Закупка</button>
-  <button class="tab" onclick="show('q4',this)">4 кв</button>
   <button class="tab" onclick="show('fin',this)">Финансы</button>
   <button class="tab" onclick="show('nk',this)">Неликвиды</button>
   <button id="tab_q" class="tab" onclick="show('q',this)">Вопросы (6)</button>
@@ -175,24 +172,6 @@
 <section id="q" class="page">
  <div class="qitem"><div><span class="qdot" style="background:#ff2b2b;margin-right:7px"></span><b>Вопрос 1.</b> Прогноз 11–11% плана — пересматриваем план или мобилизуем производство?</div><div class="qfoot"><span class="chip2">Директор</span><span class="chip2">до 25.09</span><span class="chip3">открыт</span></div></div><div class="qitem"><div><span class="qdot" style="background:#ff2b2b;margin-right:7px"></span><b>Вопрос 2.</b> Не стартовали 21 позиций плана: клюква, пикосульфат, нафтифин, Ним №20/№30 и др. — что запускаем до 25.09?</div><div class="qfoot"><span class="chip2">Производство</span><span class="chip2">до 25.09</span><span class="chip3">открыт</span></div></div><div class="qitem"><div><span class="qdot" style="background:#ffd400;margin-right:7px"></span><b>Вопрос 3.</b> Гриппофлю Экстра №8 лимон: план 500 — выпуск 0 (запущен): темп достаточен?</div><div class="qfoot"><span class="chip2">Цех №1</span><span class="chip2">до 25.09</span><span class="chip3">открыт</span></div></div><div class="qitem"><div><span class="qdot" style="background:#ffd400;margin-right:7px"></span><b>Вопрос 4.</b> 5 закупочных позиций без цен (пикосульфат, нафтифин, АЦЦ-субст., салфетки) — без КП заказать нельзя</div><div class="qfoot"><span class="chip2">Коммерция</span><span class="chip2">до 25.09</span><span class="chip3">открыт</span></div></div><div class="qitem"><div><span class="qdot" style="background:#ffd400;margin-right:7px"></span><b>Вопрос 5.</b> Минуса по карточкам сырья (Нимесулид Тяньцзинь −575 кг, Фенилэфрин Шенжен −31 кг и др.) — письмо Валерию/Будник 24.09: исправить учёт</div><div class="qfoot"><span class="chip2">Бухгалтерия</span><span class="chip2">до 30.09</span><span class="chip3">открыт</span></div></div><div class="qitem"><div><span class="qdot" style="background:#ffd400;margin-right:7px"></span><b>Вопрос 6.</b> Темп вдвое ниже августа — что мешает: смены, сырьё, ОКК?</div><div class="qfoot"><span class="chip2">Производство</span><span class="chip2">до 25.09</span><span class="chip3">открыт</span></div></div>
  
-</section>
-<section id="q4" class="page">
- <div class="kpis" style="grid-template-columns:repeat(3,1fr)">
-  <div class="kpi"><div class="t">План производства 4 кв</div><div class="v">5 140 <small>тыс.уп.</small></div><div class="s">план v2 · из файла закупок 29.09</div></div>
-  <div class="kpi"><div class="t">Выпущено с 01.10</div><div class="v" style="color:#1f6bff">38,1 <small>тыс.уп.</small></div><div class="s">по 02.10 · 0.0% квартала</div></div>
-  <div class="kpi"><div class="t">Прогноз на квартал</div><div class="v" style="color:#d97706">0,28 <small>млн упак.</small></div><div class="s">октябрь · 11% плана · равномерный темп (мало данных) · ноябрь/декабрь — после утверждения ПП</div></div>
- </div>
- <div class="card"><h3>План-факт по месяцам квартала</h3>
-  <div class="hscroll"><table><tr><th>Месяц</th><th class="num">План, тыс.уп.</th><th class="num">Факт, тыс.уп.</th><th class="num">%</th></tr>
-   <tr><td><b>Октябрь</b></td><td class="num">2 638,3</td><td class="num" style="color:#1f6bff">38,1</td><td class="num">1.4%</td></tr>
-   <tr><td>Ноябрь</td><td class="num" colspan="3" style="color:#8b97ab">план не утверждён — ждём ПП от Валерия</td></tr>
-   <tr><td>Декабрь</td><td class="num" colspan="3" style="color:#8b97ab">план не утверждён — ждём ПП от Валерия</td></tr>
-  </table></div></div>
- <div class="card"><h3>Движение к плану квартала</h3>
-  <div class="s" style="font-size:12.5px;line-height:1.6">· план квартала — 5 140 тыс. упак. · выпущено — 38,1 тыс. (0.0%)<br>
-  · октябрь: план 2 638,3 тыс. · факт 38,1 тыс. · прогноз 0,28 млн упак.<br>
-  · ноябрь и декабрь — планы будут добавлены в это окно сразу после утверждения ПП Валерием<br>
-  · дефицит и закупка под квартал — вкладка «Закупка»</div>
 </section>
 <section id=fin class=page>
  <div class=kpis>
@@ -313,4 +292,4 @@ document.getElementById(id).classList.add('active'); btn.classList.add('active')
  window.show=function(id,btn){ _show(id,btn); setTimeout(applyFit,40); };
 })();
 </script>
-<script>function ddsToggle(a){var e=document.getElementById('dds_det');var o=e.style.display==='none';e.style.display=o?'block':'none';a.textContent=o?'▲ Скрыть постатейную раскладку':'▼ Постатейная раскладка';}</script><script>(function(){var s='2610061215';setInterval(function(){fetch('stamp.txt',{cache:'no-store'}).then(function(r){return r.text()}).then(function(t){if(t.trim()&&t.trim()!==s)location.reload()}).catch(function(){})},300000);})();</script></body></html>
+<script>function ddsToggle(a){var e=document.getElementById('dds_det');var o=e.style.display==='none';e.style.display=o?'block':'none';a.textContent=o?'▲ Скрыть постатейную раскладку':'▼ Постатейная раскладка';}</script><script>(function(){var s='2610061302';setInterval(function(){fetch('stamp.txt',{cache:'no-store'}).then(function(r){return r.text()}).then(function(t){if(t.trim()&&t.trim()!==s)location.reload()}).catch(function(){})},300000);})();</script></body></html>
